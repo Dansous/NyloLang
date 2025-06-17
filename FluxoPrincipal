@@ -1,0 +1,18 @@
+inicio:  // Início do fluxo principal
+
+mensagem:  // Mensagem inicial de boas-vindas
+	"Olá! Que bom ver você por aqui."
+		botao 1:  // Opção para saber mais sobre o produto
+			"Quero saber mais" -> mais_info
+		botao 2:  // Opção para atendimento humano
+			"Falar com alguém" -> atendimento_humano
+
+fluxo mais_info:  // Fluxo acionado ao clicar em "Quero saber mais"
+	mensagem:  // Mensagem com informação sobre o produto
+		"Nosso produto é top. Veja só!"
+
+fluxo atendimento_humano:  // Fluxo acionado ao clicar em "Falar com alguém"
+	mensagem:  // Mensagem indicando que o atendimento será iniciado
+		"Já vou chamar alguém para você..."
+
+fim  // Fim do fluxo
